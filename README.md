@@ -46,31 +46,28 @@ Fixing datatype issues
 
 police.isnull().sum()
 police.fillna(0)
-📈 Data Analysis Techniques
-✔️ Value Counts
 
-Finding unique values and their occurrences.
+**📈 Data Analysis Techniques**
+✔️ Value Counts-->Finding unique values and their occurrences.
 
-police['driver_gender'].value_counts()
-✔️ Filtering Data
+  syntax:police['driver_gender'].value_counts()
+  
+✔️ Filtering Data-->Filtering records based on conditions.
 
-Filtering records based on conditions.
+  syntax:police[police['violation'] == 'Speeding']
+  
+✔️ GroupBy Operations-->Grouping records for better analysis.
 
-police[police['violation'] == 'Speeding']
-✔️ GroupBy Operations
+  syntax:police.groupby('driver_gender')['search_conducted'].sum()
+  
+✔️ Statistical Operations-->Performing statistical calculations.
 
-Grouping records for better analysis.
-
-police.groupby('driver_gender')['search_conducted'].sum()
-✔️ Statistical Operations
-
-Performing statistical calculations.
-
-police['driver_age'].mean()
-police['driver_age'].max()
-police['driver_age'].min()
+ syntax: police['driver_age'].mean()
+         police['driver_age'].max()
+         police['driver_age'].min()
 
 📊 Sample Questions Solved
+
 **Q1. Which gender was stopped more often for speeding?**
 
 Used filtering and value_counts() to analyze speeding violations.
