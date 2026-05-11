@@ -24,11 +24,13 @@ Drug & Alcohol Related Stops
 It is a structured dataset used for analyzing police traffic stop records.
 
 **🛠️ Technologies Used**
+
 Python 🐍
 Pandas 📊
 Jupyter Notebook
 
 **🔍 Key Concepts Covered**
+
 📊 Data Exploration
 Viewing dataset using head()
 Checking dataset shape using shape
@@ -37,6 +39,7 @@ Dataset summary using info()
 Detecting null values using isnull().sum()
 
 **🧹 Data Cleaning**
+
 Handling missing values using fillna()
 Converting string values to numeric format
 Removing unwanted rows using filtering
@@ -48,21 +51,22 @@ police.isnull().sum()
 police.fillna(0)
 
 **📈 Data Analysis Techniques**
+
 ✔️ Value Counts-->Finding unique values and their occurrences.
 
-  syntax:police['driver_gender'].value_counts()
+  **syntax**:police['driver_gender'].value_counts()
   
 ✔️ Filtering Data-->Filtering records based on conditions.
 
-  syntax:police[police['violation'] == 'Speeding']
+ **syntax**:police[police['violation'] == 'Speeding']
   
 ✔️ GroupBy Operations-->Grouping records for better analysis.
 
-  syntax:police.groupby('driver_gender')['search_conducted'].sum()
+  **syntax**:police.groupby('driver_gender')['search_conducted'].sum()
   
 ✔️ Statistical Operations-->Performing statistical calculations.
 
- syntax: police['driver_age'].mean()
+ **syntax**: police['driver_age'].mean()
          police['driver_age'].max()
          police['driver_age'].min()
 
